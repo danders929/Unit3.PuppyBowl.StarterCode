@@ -12,7 +12,7 @@ export const store = configureStore({
   // This means the API service's actions will be dispatched to the API service's reducer.
   reducer: {
     // The key is the reducerPath we defined in our API service, and the value is the reducer
-    [puppyBowlApi.reducerPath]: puppyBowlApi.reducer,
+    puppyBowlApi: puppyBowlApi.reducer,
   },
   // Add any additional middleware
   // getDefaultMiddleware is a function that returns the default middleware used by Redux Toolkit

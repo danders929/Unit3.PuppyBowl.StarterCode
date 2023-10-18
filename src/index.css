@@ -1,17 +1,37 @@
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darkens the background image by 50% (adjust the alpha value as needed) */
+  z-index: -1; /* Place the overlay below the content */
+}
+
 /* Apply a background image to the entire body of the document. */
 body {
-  background-image: url("./concrete.jpg"); /* The image used as a background. */
+  background-image: url("./field.jpg"); /* The image used as a background. */
   background-repeat: no-repeat; /* The background image will not repeat. */
   background-attachment: fixed; /* The background image will not scroll with the page. */
   background-size: cover; /* The background image will cover the entire area of the element. */
 }
 
 /* Styling for the introduction text of the application. */
+.header {
+  text-align: center; /* The text is centered. */
+  color: rgb(211, 211, 211); /* The color of the text. */
+  font-size: 48px; /* The size of the text. */
+  padding: 24px; /* The padding around the text. */
+  margin-left: 21px; /* The margin to the left of the text. */
+  padding-right: 100px; /* The padding to the right of the text. */
+  padding-left: 100px; /* The padding to the left of the text. */
+}
 .intro {
   text-align: center; /* The text is centered. */
-  color: #610564; /* The color of the text. */
+  color: rgb(211, 211, 211); /* The color of the text. */
   font-size: 24px; /* The size of the text. */
-  padding: 24px; /* The padding around the text. */
+  padding: 0px; /* The padding around the text. */
   margin-left: 21px; /* The margin to the left of the text. */
   padding-right: 100px; /* The padding to the right of the text. */
   padding-left: 100px; /* The padding to the left of the text. */
@@ -30,10 +50,10 @@ body {
   width: 360px; /* The width of the card. */
   height: 450px; /* The height of the card. */
   margin: 10px; /* The margin around the card. */
-  background-color: grey; /* The background color of the card. */
+  background-color: rgba(55, 157, 203, 0.6); /* The background color of the card. */
   border: solid 1px;/* The border around the card. */
   border-radius: 5px;/* The radius of the card's corners. */
-  box-shadow: inset; /* The shadow effect around the card. */
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.68); /* The shadow effect around the card. */
   overflow: hidden; /* Any content that goes outside the card will be hidden. */
   position: relative; /* The card's position is set to relative so it can be moved using the transform property. */
   transition: transform 0.3s; /* Transition effect for the transform property. */
