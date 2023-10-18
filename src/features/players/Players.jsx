@@ -21,9 +21,9 @@ const Players = () => {
 
   // Show an error message if the fetch failed
   if (error) {
-    return <p>Error loading data</p>
+    return <p>Error loading data {error.message}</p>
   }
-
+console.log("data: ", data)
   // Show the fetched data after it has arrived
   return (
     <div className="players">
