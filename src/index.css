@@ -19,8 +19,9 @@ body {
 
 /* Styling for the container that holds the player cards. */
 .players {
-  display: flexbox; /* The player cards are displayed using flexbox. */
+  display: flex; /* The player cards are displayed using flexbox. */
   flex-wrap: wrap;/* The player cards will wrap onto the next line if there is not enough space. */
+  flex-direction: row;
   align-items: center;/* The player cards are centered on the line. */
 }
 
