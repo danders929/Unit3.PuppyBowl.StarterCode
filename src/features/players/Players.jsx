@@ -33,7 +33,9 @@ console.log("data: ", data)
       {data.data.players.map((player) => (
         // Use the player's ID as the key for this div
         <div key={player.id} className="player-card">
-          <img src={player.imageUrl} alt="Puppy Image"></img>          
+          <div className="player-image-container">
+            <img className="player-image"src={player.imageUrl} alt="Puppy Image"></img>          
+          </div>
           <div className="player-details">
             <h2>Name: {player.name} </h2>            
             <p>Breed: {player.breed} </p>            
