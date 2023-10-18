@@ -19,6 +19,9 @@ body {
 
 /* Styling for the introduction text of the application. */
 .header {
+  font-family: grecian-light-face, serif;
+  font-style: normal;
+  font-weight: 400;
   text-align: center; /* The text is centered. */
   color: rgb(211, 211, 211); /* The color of the text. */
   font-size: 48px; /* The size of the text. */
